@@ -17,7 +17,7 @@ const useLocalStorage = (key, initialValue) => {
     return item ? JSON.parse(item) : initialValue;
   });
 
-  return [storedValue];
+  return [storedValue, setStoredValue];
 }
 
 export default useLocalStorage;
